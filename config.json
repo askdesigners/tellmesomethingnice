@@ -1,0 +1,26 @@
+{
+  "locals": {
+    "url": "http://www.tellmesomethingnice.com",
+    "name": "Something Nice - Digital Product Studio",
+    "owner": "Ryan Cole",
+    "description": "We work with awesome companies to make web tools that perform."
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
