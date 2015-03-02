@@ -1,29 +1,48 @@
 extends layout
 
+block header
+  div.logo.landerLogo
+    h2= locals.name
+    h3 Digital Product and Marketing Studio
+
+
+
 block content
-  include author
-  each article in articles
-    article.article.intro
-      header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
-        h2
-          a(href=article.url)= article.title
-      section.content
-        if article.intro.length > 0
-          | !{ typogr(article.intro).typogrify() }
-        if article.hasMore
-          p.more
-            a(href=article.url) more
+  section.introSection.landerSection
+    div.innerWrap
+      p You don't need a brochure on the internet. You need tools. Something that informs your business. Insights.
+      p We work with awesome companies to build web products that perform. Say goodbye to your wimpy website and say hello to  real digital strategy.
+  
+  section.whatWeDo.landerSection
+    h3 Let's work together
+    div.innerWrap.clear
+      .offerPoint
+        img(src="img/webapp.svg" alt="Digital Product Design and Development")
+        h5 Digital Products
+        p Great ideas often start our pretty rough. Together we will develop your idea into a product that your customers will adore.
 
-block prepend footer
-  div.nav
-    if prevPage
-      a(href=prevPage.url) « Newer
-    else
-      a(href='/archive.html') « Archives
-    if nextPage
-      a(href=nextPage.url) Next page »
+      .offerPoint
+        img(src="img/arrows.svg" alt="Rapid Validation")
+        h5 Rapid Validation
+        p Test that bright idea with a simple landing page and marketing push. It's always a good idea to test the water before diving in.
 
+      .offerPoint
+        img(src="img/steps.svg" alt="Digital Product Design and Development")
+        h5 User Research
+        p Your users are what make your business work. Check your assumptions about user needs against real data.
+
+      .offerPoint
+        img(src="img/wavyman.svg" alt="Digital Product Design and Development")
+        h5 Marketing Strategy
+        p From the very start we'll be thinking about how your message will work online. What channels and tactics will work best. It's built in, not stuck on. 
+
+  section.followUp.landerSection
+    div.innerWrap
+      h3 Let Your Data Sing
+      img(src="img/data.svg" alt="Analytics")
+      p Just because the project winds down doesn't mean the work is done. To help you keep your goals on track we offer a monthly reporting package. We’ll take care of interpreting your analytics data, and condensing everything down to an executive summary complete with action points. 
+
+block footer
+  h5 get in touch
 
 

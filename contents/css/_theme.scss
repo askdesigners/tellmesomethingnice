@@ -1,0 +1,55 @@
+// Global Page Settings
+
+body {
+  font-family: $fonts;
+  font-size: 18px;
+  color: $grey1;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    letter-spacing: 0.01em;
+    margin-bottom: 0.5em;
+  }
+
+
+
+.content-wrap {
+
+  
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+
+.logo {
+
+  text-align: center;
+
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+  }
+
+  
+  
+}
+
+@media only screen and (min-width: $smallbreak) {
+
+
+}
+
+@media only screen and (min-width: $midbreak) {
+
+
+} 
+
+@media only screen and (min-width: $bigbreak) {
+
+
+}
+

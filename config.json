@@ -1,9 +1,10 @@
 {
   "locals": {
     "url": "http://www.tellmesomethingnice.com",
-    "name": "Something Nice - Digital Product Studio",
+    "name": "Something Nice",
+    "subhead": "Digital Product Studio"
     "owner": "Ryan Cole",
-    "description": "We work with awesome companies to make web tools that perform."
+    "description": "Digital Product Design, Development and Marketing for Awesome Companies."
   },
   "plugins": [
     "./plugins/paginator.coffee"
