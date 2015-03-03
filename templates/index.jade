@@ -5,8 +5,6 @@ block header
     h2= locals.name
     h3 Digital Product and Marketing Studio
 
-
-
 block content
   section.introSection.landerSection
     div.innerWrap
@@ -42,7 +40,26 @@ block content
       img(src="img/data.svg" alt="Analytics")
       p Just because the project winds down doesn't mean the work is done. To help you keep your goals on track we offer a monthly reporting package. We’ll take care of interpreting your analytics data, and condensing everything down to an executive summary complete with action points. 
 
-block footer
-  h5 get in touch
+  section.contactForm.landerSection
+    div.innerWrap
+      h3 OMG YES
+      div.wavyDivider
+      p.form Drop us a line if you'd like a free consultation about your project.
+      form.form 
+        label.fallBackLabel.
+          Your email address
+        input(type="email" required placeholder="Your email address")#email
+        label.fallBackLabel.
+          Give us a brief description of your project and we'll get back to you as soon as we can.
+        textarea(placeholder="Give us a brief description of your project and we'll get back to you as soon as we can.")#message
+        button.sendEnquiry.
+          Say Hi
+      div.thanks
+        h3 Thanks for your enquiry
+        h4 You'll be hearing from us soon!
+
+block footScript
+
+  script(src="js/lander.js")
 
 
