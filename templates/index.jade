@@ -3,26 +3,31 @@ extends layout
 block header
   div.logo.landerLogo
     h2= locals.name
-    h3 Digital Product and Marketing Studio
+    h3= locals.subhead
 
 block content
   section.introSection.landerSection
     div.innerWrap
-      p You don't need a brochure on the internet. You need tools. Something that informs your business. Insights.
-      p We work with awesome companies to build web products that perform. Say goodbye to your wimpy website and say hello to  real digital strategy.
+      p I'm a designer with 8 years of experience building brands and products. I'm also a web developer who loves the nitty gritty of fleshing out great ideas.
+
+      .linkButtons 
+        button.behance Portfolio
+        button.github Github
+        button.cv CV
+
   
   section.whatWeDo.landerSection
     h3 Let's work together
     div.innerWrap.clear
       .offerPoint
         img(src="img/webapp.svg" alt="Digital Product Design and Development")
-        h5 Digital Products
-        p Great ideas often start our pretty rough. Together we will develop your idea into a product that your customers will adore.
+        h5 Digital Product Design
+        p Great ideas often start out pretty rough. I work closely with you to develop your idea into a product that your customers will adore.
 
       .offerPoint
-        img(src="img/arrows.svg" alt="Rapid Validation")
-        h5 Rapid Validation
-        p Test that bright idea with a simple landing page and marketing push. It's always a good idea to test the water before diving in.
+        img(src="img/tinkertoy.svg" alt="Web Development")
+        h5 Web Development
+        p As a front-end and JS developer I use a modern toolset to build highly maintainable and functional websites and web applications. 
 
       .offerPoint
         img(src="img/steps.svg" alt="Digital Product Design and Development")
@@ -31,32 +36,32 @@ block content
 
       .offerPoint
         img(src="img/wavyman.svg" alt="Digital Product Design and Development")
-        h5 Marketing Strategy
-        p From the very start we'll be thinking about how your message will work online. What channels and tactics will work best. It's built in, not stuck on. 
+        h5 Concept Development
+        p Design is way more than just visuals. I work to develop a deep conceptual framework for all aspects of my work.
 
-  section.followUp.landerSection
-    div.innerWrap
-      h3 Let Your Data Sing
-      img(src="img/data.svg" alt="Analytics")
-      p Just because the project winds down doesn't mean the work is done. To help you keep your goals on track we offer a monthly reporting package. We’ll take care of interpreting your analytics data, and condensing everything down to an executive summary complete with action points. 
+  //- section.followUp.landerSection
+  //-   div.innerWrap
+  //-     h3 Let Your Data Sing
+  //-     img(src="img/data.svg" alt="Analytics")
+  //-     p Just because the project winds down doesn't mean the work is done. To help you keep your goals on track we offer a monthly reporting package. We’ll take care of interpreting your analytics data, and condensing everything down to an executive summary complete with action points. 
 
   section.contactForm.landerSection
     div.innerWrap
       h3 OMG YES
       div.wavyDivider
-      p.form Drop us a line if you'd like a free consultation about your project.
+      p.form I'm currently available for freelance design and web development. Get in touch!
       form.form 
         label.fallBackLabel.
           Your email address
         input(type="email" required placeholder="Your email address")#email
         label.fallBackLabel.
-          Give us a brief description of your project and we'll get back to you as soon as we can.
-        textarea(placeholder="Give us a brief description of your project and we'll get back to you as soon as we can.")#message
+          Give me a quick description of your project and I'll get back to you faster than a rabbit in a dog park.
+        textarea(placeholder="Give me a quick description of your project and I'll get back to you faster than a rabbit in a dog park.")#message
         button.sendEnquiry.
           Say Hi
       div.thanks
         h3 Thanks for your enquiry
-        h4 You'll be hearing from us soon!
+        h4 I'll get back to you soon!
 
 block footScript
 
