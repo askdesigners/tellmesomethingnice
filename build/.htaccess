@@ -1,5 +1,5 @@
 <FilesMatch "\.(js|css|html)$">
-Header set Cache-Control "max-age=5400"
+Header set Cache-Control "max-age=0"
 </FilesMatch>
 
 ErrorDocument 404 404.html
