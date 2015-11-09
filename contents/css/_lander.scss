@@ -26,6 +26,20 @@
 
   p {
     font-size: 1.4em;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .linkButtons {
+    text-align: center;
+  }
+
+  button {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: white;
+    display: inline;
+    color: $color1;
   }
 }
 
