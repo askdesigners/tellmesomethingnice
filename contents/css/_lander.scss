@@ -28,6 +28,18 @@
     font-size: 1.4em;
     text-align: justify;
     text-justify: inter-word;
+
+    a{
+      background-color: transparent;
+      padding: 0;
+      color: white;
+      text-decoration: underline;
+      margin: 0; 
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
   }
 
   .linkButtons {
